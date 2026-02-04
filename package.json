@@ -1,0 +1,47 @@
+{
+  "name": "desiapp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^5.2.12",
+    "@sveltejs/kit": "^2.16.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.8",
+    "@types/node": "^22.12.0",
+    "autoprefixer": "^10.4.20",
+    "bits-ui": "^1.3.8",
+    "clsx": "^2.1.1",
+    "desiClient": "link:../desiBackend/desiClient",
+    "lucide-svelte": "^0.474.0",
+    "postcss": "^8.5.1",
+    "svelte": "^5.19.5",
+    "svelte-check": "^4.1.4",
+    "tailwind-merge": "^3.0.1",
+    "tailwind-variants": "^0.3.1",
+    "tailwindcss": "^4.0.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "highlight.js": "^11.10.0",
+    "katex": "^0.16.10",
+    "mermaid": "^11.4.0",
+    "svelte-jsoneditor": "^2.1.0",
+    "svelte-markdown": "^0.4.1",
+    "svelte-marked": "^0.8.0",
+    "zod": "^3.24.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

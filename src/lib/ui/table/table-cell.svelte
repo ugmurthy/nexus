@@ -1,0 +1,21 @@
+<script lang="ts">
+	import type { Snippet } from 'svelte';
+	import type { HTMLTdAttributes } from 'svelte/elements';
+	import { cn } from '$lib/utils/cn';
+
+	interface Props extends HTMLTdAttributes {
+		children?: Snippet;
+		class?: string;
+	}
+
+	let { children, class: className, ...restProps }: Props = $props();
+</script>
+
+<td
+	class={cn('p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]', className)}
+	{...restProps}
+>
+	{#if children}
+		{@render children()}
+	{/if}
+</td>
