@@ -214,3 +214,4 @@ export const isAuthenticated = derived(authStore, ($auth) => !!$auth.token && !!
 export const currentUser = derived(authStore, ($auth) => $auth.user);
 export const authLoading = derived(authStore, ($auth) => $auth.loading);
 export const authError = derived(authStore, ($auth) => $auth.error);
+export const isAdmin = derived(authStore, ($auth) => $auth.user?.role === 'admin');
